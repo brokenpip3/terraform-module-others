@@ -1,7 +1,5 @@
 provider "helm" {
   kubernetes {
-    config_context = "brokenpip3"
-    config_path    = "~/.kube/config"
   }
 }
 
