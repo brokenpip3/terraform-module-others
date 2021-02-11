@@ -5,10 +5,7 @@ provider "helm" {
   }
 }
 
-provider "kubernetes" {
-  config_context = "brokenpip3"
-  config_path    = "~/.kube/config"
-}
+provider "kubernetes" {}
 
 resource "kubernetes_namespace" "postgres" {
   metadata {
