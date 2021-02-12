@@ -3,8 +3,6 @@ provider "helm" {
   }
 }
 
-provider "kubernetes" {}
-
 resource "kubernetes_namespace" "postgres" {
   metadata {
     name = var.namespace
